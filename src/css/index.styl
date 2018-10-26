@@ -1,0 +1,960 @@
+@import "common.styl"
+
+#header-wrap
+  margin-bottom: 30px
+  overflow: hidden
+
+// header start
+.header
+  position: relative
+  width: 100%
+  height: 70px
+  background #232325
+  z-index: 99
+
+  .qiy-logo
+    width: 105px
+    height: 50px
+    margin-top: 10px
+
+    a, img
+      width: 100%
+      height: 100%
+
+  .header-search
+    position: absolute
+    left 50%
+    top: 14px
+    margin-left: -230px
+    padding-right: 96px
+
+  .search-content
+    position: relative
+    display inline-block
+    width: 332px
+    height: 42px
+    padding-right: 42px
+    border-radius: 21px 0 0 21px
+    background #333
+    overflow: hidden
+
+    input
+      width: 100%
+      height: 20px
+      padding: 11px 0 11px 16px
+      line-height: 20px
+      background #333
+      font-size 16px
+      color #ccc
+    i
+      line-height: 18px
+      font-size: 22px
+      position: absolute
+      top: 12px
+      right: 4px
+      cursor pointer
+
+      &:hover
+        color green1
+  .search-btn
+    position: absolute
+    top: 0
+    right: 0
+    width: 96px
+    height: 42px
+    background green2
+    border-radius 0 21px 21px 0
+    line-height: 42px
+    text-align: center
+    font-size: 16px
+    color #fff;
+    vertical-align: middle
+    cursor: pointer
+
+    &:hover
+      background green1
+
+    i
+      font-weight: 700
+      font-size: 17px
+  .header-login > ul
+    & > li
+      float: left
+      margin-top: 10px
+      text-align: center
+      padding-bottom: 10px
+      a
+       color #999
+       font-size: 13px
+
+    .header-login-li
+      .login-text i
+        padding: 0 5px
+
+    .vip-list-item
+      display block
+      width: 24px
+      height: 20px
+      margin: 6px 3px 3px 3px
+      background url("../images/sprite-vip.png") -208px -64px no-repeat
+
+    .header-vip-list
+      position: relative
+      .header-popup-box
+        display none
+        width: 221px
+        left: -74px
+        li
+          height: 36px
+          line-height: 36px
+          padding: 0 27px
+          margin-bottom: 3px
+          text-align: left
+          &:hover
+            background-color #f5f5f5
+            a
+              color golden1
+          a
+            display block
+            height: 36px
+            line-height: 36px
+        i
+          display inline-block
+          width: 24px
+          height: 20px
+          margin: -5px 5px 0 0
+          vertical-align: middle
+          background url("../images/sprite-head-sideIcon.png") no-repeat
+        .vip
+          background-position 0 -661px
+        .task
+          background-position -30px -661px
+        .well
+          background-position -60px -661px
+          margin-top: -3px
+
+
+        .popup-box-btn
+          background-color golden1
+
+          &:hover
+            background-color golden2
+
+      &:hover
+        & > .vip-list-text
+          color #c8a06a
+        .vip-list-item
+          background-position -208px -39px
+
+    .header-upload-list
+      position: relative
+      .header-popup-box
+        display none
+        width: 158px
+        left -45px
+        li
+          height: 32px
+          line-height: 32px
+          padding-left: 35px
+          margin-bottom: 3px
+          text-align: left
+
+          &:hover
+            background-color #f5f5f5
+            a
+              color green1
+        a
+          color #222
+          font-size: 14px
+        i
+          display inline-block
+          width: 20px
+          height: 20px
+          margin: -2px 7px 0 0
+          vertical-align: middle
+          background url("../images/sprite-head-sideIcon.png") no-repeat
+        .download-icon-1
+          background-position 0 -1px
+        .download-icon-2
+          background-position 0 -30px
+        .download-icon-3
+          background-position 0 -60px
+        .download-icon-4
+          background-position 0 -90px
+        .download-icon-5
+          background-position 0 -120px
+        .download-icon-6
+          background-position -90px -92px
+          margin-top: 2px
+
+    .header-download-list
+      position: relative
+      .download-list-vip
+        position: absolute
+        top -6px
+        right: -25px
+        display inline-block
+        width: 46px
+        height: 18px
+        background url("../images/sprite-head-sideIcon.png") -120px -119px no-repeat
+
+
+      .header-popup-box
+        display none
+        width: 195px
+        left -56px
+        li
+          height: 32px
+          line-height: 32px
+          padding-left: 21px
+          margin-bottom: 7px
+          text-align: left
+        a
+          color #222
+          font-size: 14px
+        i
+          display inline-block
+          width: 22px
+          height: 22px
+          margin: -2px 7px 0 0
+          vertical-align: middle
+          background url("../images/sprite-head-sideIcon.png") no-repeat
+        .download-icon-1
+          background-position -30px 0
+        .download-icon-2
+          background-position -30px -30px
+        .download-icon-3
+          background-position -30px -60px
+        .download-icon-4
+          background-position -30px -90px
+        .popup-box-btn
+          font-size: 12px
+          color #fff
+          background-color green2
+
+          &:hover
+            background-color green1
+
+      .vip-list-item
+        position: absolute
+        top: -5px
+        right: -24px
+        width: 45px
+        height: 17px
+        background url("../images/sprite-head-sideIcon.png") -121px -120px no-repeat
+
+
+    .header-info-list
+      position: relative
+      .header-popup-box
+        display none
+        width: 298px
+        min-height: 384px
+        left: -201px
+      .popup-arrow-box
+        left 235px
+      .popup-box-content
+        padding-top: 0
+      .popup-box-nav-list
+        height: 38px
+        padding-left: 17px
+        line-height: 38px
+        border-bottom 2px solid #e6e6e6
+        li
+          position: relative
+          float: left
+          padding: 0 16px
+
+          &:hover
+            a
+              color green2
+
+          a
+            font-size: 14px
+            color #333
+          em
+            position: absolute
+            bottom: 0
+            width: 24px
+            height: 4px
+            left: 50%
+            margin-left: -12px
+            background-color green2
+            border-radius 2px
+
+      .popup-box-nav-main div
+        padding-top: 90px
+        margin: 0 auto
+        width: 225px
+        text-align: center
+
+      .popup-box-nav-main div  span
+          display inline-block
+          width: 118px
+          height: 100px
+          background url("../images/sprite-head-sideIcon.png") 0 -430px no-repeat
+
+
+    .header-look-list
+      position: relative
+      .header-popup-box
+        display none
+        width: 298px
+        min-height: 384px
+        left: -248px
+      .popup-arrow-box
+        left 281px
+      .popup-box-filter
+        height: 38px
+        padding-right: 17px
+        line-height: 38px
+        text-align: right
+      .popup-box-filter-icon
+        display inline-block
+        width: 16px
+        height: 16px
+        margin-top: -1px
+        vertical-align: middle
+        background url("../images/sprite-head-sideIcon.png") -60px -120px no-repeat
+
+      .popup-box-nav-main div
+        padding-top: 90px
+        margin: 0 auto
+        width: 225px
+        text-align: center
+
+      .popup-box-nav-main div span
+        display inline-block
+        width: 118px
+        height: 100px
+        background url("../images/sprite-head-sideIcon.png") 0 -430px no-repeat
+
+
+
+    .header-upload-list:hover,
+    .header-download-list:hover,
+    .header-info-list:hover,
+    .header-look-list:hover
+      .vip-list-text,
+      .login-li-icon
+        color green2
+
+    .header-login-li .login-li-icon:hover,
+    .login-text-login:hover,
+    .login-text-reg:hover
+      color green2
+
+
+
+// header end
+
+// banner start
+.header-banner
+  position: relative
+  width: 100%
+  background #000
+  .banner-list-wrap
+    width: 100%
+    height: 520px
+    overflow: hidden
+    ul
+      height: 520px
+      overflow: hidden
+    li
+      position: absolute
+      top: 0
+      left: 0
+  .banner-desc-wrap
+    position: absolute
+    right: 118px
+    top: 0
+    background rgba(0,0,0,.7)
+    z-index: 10
+  .banner-desc-list
+    padding: 16px 0
+    li
+      padding: 11px 20px
+      line-height: 18px
+    a
+      font-size: 16px
+      color: #ddd
+  .banner-nav
+    width: 100%
+    position: absolute
+    bottom: 0
+    left: 0
+    background rgba(27,27,28,.96)
+    z-index: 10
+
+    .container-center
+      padding: 16px 0 10px
+
+      & > div, & > div > div
+        display inline-block
+    .banner-nav-item-0.nav-item
+      padding-left: 0
+    .nav-item
+      padding: 0 5px 0 20px
+    .nav-list-item
+      margin-right: 15px
+      a
+        display inline-block
+        padding: 3px 0
+        margin-bottom: 7px
+        color: #ccc
+        &:hover
+          color green2
+    .banner-nav-bg
+      background url("../images/nav-item.png") center right no-repeat/
+    .banner-nav-vip
+      .banner-nav-vip-text
+        color golden2 !important
+      i
+        display block
+        width: 34px
+        height: 28px
+        margin-left: 10px
+        padding-bottom: 5px
+        background url("../images/nav-item-vipNormal@2x.png") no-repeat
+        background-size 34px 28px
+
+
+
+
+// banner end
+
+// 今日焦点 start
+.main-focus .mod-header-icon
+  background-position: 0 -1px
+.main-focus .mod-img-box-img
+  width: 210px
+  height: 118px
+.main-focus
+  font-size: 0
+  white-space nowrap
+  margin-bottom: 50px
+  .focus-news, .focus-banner-wrap, .focus-banner-img
+    display inline-block
+    vertical-align: top
+  .focus-news
+    width: 425px
+    color #222
+    overflow: hidden
+  .focus-news-title
+    padding: 8px 0 10px
+    font-size 20px
+    h2
+      position: relative
+      padding-left: 74px
+    i
+      font-size: 14px
+      font-style oblique
+      color green2
+      left 0
+      bottom: 1px
+    em
+      font-weight: 700
+      color green2
+      left 48px
+      bottom -2px
+    i, em
+      position: absolute
+    a:hover
+      color green2
+
+
+
+  .focus-news-row
+    padding-bottom: 3px
+    li
+      height: 38px
+      line-height: 38px
+      font-size: 16px
+      vertical-align: center
+      overflow: hidden
+      white-space nowrap
+      text-overflow ellipsis
+
+  .split
+    display inline-block
+    margin: 0 5px
+    color #ccc
+  a:hover
+    color green2
+
+
+  .focus-banner
+    position: relative
+    width: 425px
+    height: 287px
+    overflow: hidden
+  .focus-banner-list li
+    position: absolute
+    top: 0
+    left: 0
+    .mod-img-box-img
+      width: 425px
+      height: 287px
+  .focus-banner-desc
+    position: absolute
+    bottom: 0
+    left: 0
+    height: 60px
+    width: 100%
+    background-color rgba(0,0,0,.6)
+
+    ol
+      position: relative
+      font-size 14px
+      li
+        position: absolute
+        left: 12px
+        top: 10px
+        color: #ccc
+      .desc-icon
+        font-size: 16px
+        color green2
+        font-weight: 700
+        margin-right: 6px
+      a
+        font-size: 16px
+        color #fff
+        &:hover
+          color green2
+      p
+        margin-left: 25px
+
+    .focus-banner-click
+      position: absolute
+      bottom: 6px
+      right: 10px
+      color: #ccc
+      .page-num
+        display inline-block
+        font-size 14px
+    .banner-click-prev, .banner-click-next
+      display inline-block
+      width: 8px
+      height: 8px
+      margin: 0 6px
+      cursor pointer
+      background url("../images/sprite-common-icons.png") no-repeat
+    .banner-click-prev
+      background-position: -110px 0
+      &:hover
+        background-position: -130px 0
+    .banner-click-next
+      background-position: -120px 0
+      &:hover
+        background-position: -140px 0
+
+.focus-banner-wrap
+  width: 425px
+  margin-right: 5px
+  .focus-banner-info
+    padding: 8px 0 0 14px
+    overflow: hidden
+    li
+      height: 38
+      line-height: 38px
+      font-size: 16px
+      vertical-align: center
+      overflow: hidden
+      white-space nowrap
+      text-overflow ellipsis
+
+
+
+// 今日焦点 end
+
+
+// 综艺 start
+
+.tv
+  position: relative
+  margin-bottom: 28px
+  .mod-header-icon
+    background-position: -160px 0
+  .mod-big-img-list .mod-img-box-img, .mod-big-side-list .mod-img-box-img
+    width: 210px
+    height: 118px
+
+
+// 综艺 end
+
+// 自制综艺 start
+.my-tv
+  margin-bottom: 28px
+  .mod-header-text
+    margin-left: 0
+  .mod-img-box-img
+    width: 210px
+    height: 118px
+  .small-box-desc-text
+    height:auto
+    white-space normal
+    color: #222
+    cursor pointer
+    &:hover
+      color green2
+    a
+      color green2
+
+// 自制综艺 end
+
+// 脱口秀 start
+.talk
+  .mod-header-text
+    margin-left: 0
+  .mod-img-box-img
+    width: 210px
+    height: 118px
+
+// 脱口秀 end
+
+
+// 娱乐 start
+.rec, .cartoon
+  margin-bottom: 50px
+  .mod-img-box-img
+    width: 210px
+    height: 118px
+  .mod-header-icon
+    background-position: -120px 0
+    
+// 娱乐 end
+
+// 电影 start
+.mod-list-side
+  position: relative
+
+.movie, .teleplay
+  margin-bottom: 50px
+  .mod-img-box-img
+    width: 210px
+    height: 280px
+  .mod-img-box-desc
+    position: relative
+    p
+      padding-right: 30px
+  .desc-grade
+    display inline-block
+    position: absolute
+    top: 5px
+    right: 10px
+    font-size: 18px
+    color #ff6200
+  .movie-level
+    padding-top: 9px
+    background-color: #f8f8f8
+    li
+      position: relative
+      height: 21px
+      padding: 0 15px 12px 0
+      white-space nowrap
+      overflow: hidden
+      text-overflow ellipsis
+      &:hover
+        a
+          color green2
+    a
+      font-size: 15px
+      vertical-align: top
+    i
+      display inline-block
+      width: 30px
+      height: 21px
+      line-height: 21px
+      text-align: center
+      margin-right: 5px
+      border-radius 0 10px 10px 0
+      font-size: 20px
+      color #fff
+    .level
+      color: #999
+    .level-1
+      background #ff3000
+    .level-2
+      background #ff6000
+    .level-3
+      background #ffb400
+    em
+      position: absolute
+      top: 6px
+      display inline-block
+      background url("../images/sprite-common-icons.png") no-repeat
+    .up-arrow, .down-arrow
+      width: 8px
+      height: 8px
+      right: 5px
+    .up-arrow
+      background-position: -150px 0
+    .down-arrow
+      background-position: -160px 0
+    .line
+      width: 6px
+      height: 2px
+      right: 7px
+      background-position: -170px -3px
+    
+.movie-col-1
+  width: 210px
+  &.mod-big-side-list
+    right: 0
+
+// 电影 end
+
+// 网络电影 start
+.network-movie
+  margin-bottom: 50px
+  .mod-img-box-img
+    width: 210px
+    height: 118px
+  .mod-header-text
+    margin-left: 0
+  .mod-two-list
+    width: 100%
+    white-space nowrap
+  .left-list, .right-list
+    display inline-block
+  .left-list
+    width: 640px
+    overflow: hidden
+
+
+// 网络电影 end
+
+// 广告2
+.ad-2
+  margin-bottom: 50px
+  a
+    background-image: url("../images/ad02.jpg")
+
+// 电视剧
+.teleplay .mod-big-side-list li
+  padding-bottom: 9px
+.teleplay .mod-header-icon
+  background-position: -280px 0
+
+// 动漫
+.cartoon .mod-header-icon
+  background-position: -320px 0
+
+// 游戏视频
+.game-attention
+  display none
+  position: absolute
+  bottom: 8px
+  right: 10px
+  padding 1px 10px
+  font-size: 12px
+  color #fff
+  background green2
+  border-radius 10px
+  cursor pointer
+.game
+  margin-bottom: 50px
+  .mod-img-box-img
+    width: 210px
+    height: 118px
+  .mod-li:hover
+    .game-attention
+      display inline-block
+
+  .mod-header-icon
+    background-position: -80px -83px
+
+
+// 纪录片 start
+
+.record
+  margin-bottom: 50px
+  .mod-img-box-img
+    width: 210px
+    height: 280px
+  .mod-header-icon
+    background-position: 0 -42px
+
+
+// 纪录片 end
+
+
+// 帮助平台 start
+.platform-list-wrap
+  padding: 10px 0
+  margin-bottom: 40px
+.platform-list
+  background-color: #f8f8f8
+  .platform-item
+    width: 210px
+    height: 100px
+    padding: 20px 0
+    font-size: 16px
+  a
+    display block
+    text-align: center
+    em
+      display inline-block
+      width: 16px
+      height: 16px
+      background url("../images/sprite-ptEntry-icons@2x.png") -562px 0 no-repeat
+      background-size 580px 70px
+      vertical-align: -2px
+      margin-left: 5px
+  .platform-icon
+    display inline-block
+    width: 68px
+    height: 68px
+    background url("../images/sprite-ptEntry-icons@2x.png") no-repeat
+    background-size 580px 70px
+    &.icon-1
+      background-position: 0 0
+    &.icon-2
+      background-position: -70px 0
+    &.icon-3
+      background-position: -140px 0
+    &.icon-4
+      background-position: -210px 0
+    &.icon-5
+      background-position: -280px 0
+    &.icon-6
+      background-position: -350px 0
+    &.icon-7
+      background-position: -420px 0
+    &.icon-8
+      background-position: -490px 0
+  .platform-title
+    text-align: center
+    margin-left: 20px
+
+  li:hover
+    background #fff
+    box-shadow 0 0 6px #dddddd
+    transform scale(1.05)
+    a
+      color green2
+
+
+
+// 帮助平台 end
+
+
+// 页脚 start
+#footer
+  background #f8f8f8
+  padding: 20px 0 70px
+  font-size: 0
+  .footer-content
+    padding-bottom: 30px
+    border-bottom: 1px solid #ececec
+  dl
+    display inline-block
+    font-size: 15px
+    vertical-align: top
+    width: 16.6666%
+    color: #222
+  dt
+    font-size: 22px
+    line-height: 32px
+    padding-right: 20px
+    margin-bottom: 10px
+  dd
+    line-height: 35px
+    padding-right: 20px
+    overflow: hidden
+    text-overflow ellipsis
+    white-space nowrap
+    cursor pointer
+    &:hover
+      color green2
+
+  .copyright
+    margin-top: 20px
+    text-align: center
+    font-size: 16px
+    color #999
+
+
+
+// 页脚 end
+
+
+// 放回顶部 start
+
+.scroll-home
+  position: fixed
+  bottom: 30px
+  right: 30px
+
+  li
+    margin-top: 10px
+    &:hover
+      a
+        border-radius 0 50% 50% 0
+        background #e0f7e2
+        box-shadow none
+      i
+        color green2
+      span
+        max-width 200px
+        padding-left: 17px
+        color green2
+
+  a
+    position: relative
+    display inline-block
+    width: 36px
+    height: 36px
+    line-height: 36px
+    text-align: center
+    border-radius 50%
+    background #fff
+    box-shadow 0 0 5px 0 rgba(2,2,2,.2);
+  span
+    position: absolute
+    top: 0
+    right: 35px
+    display inline-block
+    max-width: 0
+    overflow: hidden
+    white-space nowrap
+    background #e0f7e2
+    border-radius 18px 0 0 18px
+  i
+    display inline-block
+    font-size: 18px
+    color: #999
+    font-weight: 700
+  .scroll-sign i
+    font-size: 26px
+
+// 放回顶部 end
+
+
+@media screen and (min-width: 1766px)
+  .header .container, .container-center
+    width 1715px
+  .header-banner .banner-nav .nav-item
+    padding: 0 25px 0 30px
+    .nav-list-item
+      margin-right: 20px
+      margin-left: 5px
+  .mod-small-two-list .mod-two-list .left-list, .mod-small-two-list .mod-two-list .right-list
+    width: 855px
+
+@media screen and (max-width: 1765px) and (min-width: 1551px)
+  .header .container, .container-center
+    width 1500px
+  .header-banner .banner-nav .nav-item
+    padding: 0 18px 0 22px
+    .nav-list-item
+      margin-right: 15px
+      margin-left: 5px
+  .mod-small-two-list .mod-two-list .left-list
+    width: 855px
+
+@media screen and (max-width: 1550px) and (min-width: 1336px)
+  .header .container, .container-center
+    width 1285px
+
+

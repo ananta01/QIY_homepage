@@ -1,0 +1,369 @@
+// 颜色
+green1 = #00c806
+green2 = #00be06
+
+golden1 = #c8a06a
+golden2 = #d6ae75
+
+
+
+// 公用类
+.fl
+  float: left
+
+.fr
+  float: right
+
+.hide
+  display none !important
+
+.show
+  display block
+
+.active-color
+  color green2 !important
+
+
+.clearfix
+  zoom: 1
+
+.clearfix:after
+  content ''
+  display block
+  height: 0
+  visibility: hidden
+  clear both
+
+.container-center
+  position: relative
+  width: 1285px
+  margin-left: auto
+  margin-right: auto
+  overflow: hidden
+.container
+  position: relative
+  width: 1285px
+  margin-left: auto
+  margin-right: auto
+
+.arrow
+  display inline-block
+  width: 0
+  height: 0
+  margin-right: 5px
+  border-left 6px solid green2
+  border-top: 4px solid transparent
+  border-bottom: 4px solid transparent
+  vertical-align: 2px
+
+// header公用
+.header
+  .login-li-icon
+    display block
+    text-align: center
+    font-size 20px !important
+    font-weight: 700
+  .li-m-l
+    padding-left: 25px
+
+  .header-popup-box
+    position: absolute
+    top: 60px
+    border-radius 5px
+    background-color #fff
+    box-shadow 0 2px 6px 0 rgba(0,0,0,.1);
+    z-index 999
+  .popup-box-content
+    position: relative
+    width: 100%
+    height: 100%
+    padding: 10px 0
+
+    li
+      overflow: hidden
+      text-overflow ellipsis
+      white-space nowrap
+    .popup-box-btn
+      display inline-block
+      height: 24px
+      padding: 0 15px
+      margin-top: 8px
+      line-height: 24px
+      text-align: center
+      color #fff
+      border-radius 13px
+
+  .popup-arrow-box
+    position: absolute
+    top -7px
+    left 50%
+    width: 0
+    height: 0
+    margin-left: -3px
+    border-bottom 7px solid #fff
+    border-left 7px solid transparent
+    border-right 7px solid transparent
+
+// end
+
+// title 模块
+
+.mod-header
+  padding-bottom: 15px
+  background-color: #fff
+  .mod-header-title span
+    display inline-block
+    vertical-align: bottom
+  .mod-header-title:hover
+    span
+      color green2
+  .mod-header-icon
+    width: 28px
+    height: 28px
+    background url("../images/sprite-channelTitle-icons@2x.png") no-repeat
+    background-size 400px 120px
+  .mod-header-text
+    font-size: 26px
+    line-height: 28px
+    margin: 0 8px
+  .mod-header-nav
+    display inline-block
+    margin-left: 20px
+    li
+      display inline-block
+      padding-right: 10px
+      &:hover
+        a
+          color green2
+    .oblique-line
+      padding-right: 10px
+      color green2
+
+
+
+// title end
+
+// img_li模块
+.mod-ul
+  width: 100%
+  white-space nowrap
+  font-size: 0
+.mod-ul.mod-bottom-17
+  margin-bottom: 17px
+.mod-li
+  display inline-block
+  margin-right: 5px
+  overflow: hidden
+.mod-img-box
+  width: 210px
+  background-color: #f8f8f8
+
+.mod-img-box-wrap
+  position: relative
+  width: 100%
+  height: 100%
+  overflow: hidden
+  cursor pointer
+  transition all .3s ease
+  .mod-img-box-img
+    transition all .3s ease
+  &:hover
+    box-shadow 2px 2px 6px #888
+    .mod-img-box-img
+      transform scale(1.05)
+
+.mod-img-box-desc
+  position: relative
+  padding: 6px 10px
+  overflow: hidden
+  p
+    height: 23px
+    line-height: 23px
+    font-size: 15px
+    overflow: hidden
+    white-space nowrap
+    text-overflow ellipsis
+    color #999
+    &:hover
+      a
+        color green2
+  .sub
+    font-size: 14px
+    color: #999
+    overflow: hidden
+    text-overflow: ellipsis
+    white-space: nowrap
+    line-height: 22px
+    margin-top: 2px
+    height: 22px
+
+// img_li end
+
+// mod-big-list start
+.mod-big-main
+  font-size 0
+  white-space nowrap
+  vertical-align: top
+  .mod-big-banner
+    margin-right: 5px
+  & > div
+    display inline-block
+  .banner-wrap
+    position: relative
+    ul, .mod-img-box
+      width: 425px
+    .mod-img-box-img
+      width: 425px
+      height: 310px
+  .banner-btn
+    .prev, .next
+      display inline-block
+      width: 34px
+      height: 38px
+      position: absolute
+      top 50%
+      margin-top -40px
+      cursor pointer
+      background url("../images/sprite-common-icons.png") no-repeat
+    .prev
+      left: 0
+      background-position: -119px -21px
+    .next
+      right: 0
+      background-position: -160px -21px
+
+.mod-big-side-list
+  position: absolute
+  top: 0
+  right: -5px
+  background-color #f8f8f8
+  .mod-header-text
+    margin-left: 0
+  .mod-big-side-content
+    padding: 0 10px
+    ul
+      padding-bottom: 6px
+      border-top: 1px dotted #ddd
+    li
+      height: 40px
+      line-height: 40px
+      font-size: 15px
+      &:hover
+        a
+          color green2
+      a
+        padding-left: 5px
+
+// mod-big-list end
+
+// mod-time期刊 start
+.mod-time
+  position: absolute
+  bottom: 5px
+  right: 5px
+  span
+    display inline-block
+    font-size: 12px
+    padding: 2px 7px
+    color #fff
+    background rgba(0,0,0,.6)
+    border-radius 9px
+
+// mod-time期刊 end
+
+// mod-icon start
+.mod-icon
+  position: absolute
+  right: 5px
+  top: 0
+  i
+    display inline-block
+    width: 34px
+    height: 19px
+  i.mod-icon-live
+    background url("../images/live.png") 0 0 no-repeat
+  i.mod-icon-only
+    background url("../images/only.png") 0 0 no-repeat
+  i.mod-icon-self
+    background url("../images/self.png") 0 0 no-repeat
+  i.mod-icon-vip
+    background url("../images/vip_.png") 0 0 no-repeat
+    background-size 34px 19px
+
+
+// mod-icon end
+
+.mod-small-list
+  margin-bottom: 28px
+
+// 广告模块 start
+.mod-ad
+  margin-bottom: 50px
+  a
+    position: relative
+    display block
+    width: 100%
+    height: 100px
+    background url("../images/ad01.jpg") center center no-repeat
+  span
+    position: absolute
+    top: 0
+    left: 0
+    display block
+    padding: 0 4px
+    font-size: 12px
+    color #fff
+    background rgba(0,0,0,.5)
+
+// 广告模块 end
+
+// 推广广告 start
+
+.mod-ad-list
+  margin-bottom: 50px
+  .ad-list-title
+    margin-bottom: 8px
+    font-size: 22px
+    color #222
+  .ad-banner-wrap
+    width: 100%
+    overflow: hidden
+  .ad-banner-list
+    position: relative
+    font-size: 0
+    white-space nowrap
+    a
+      display inline-block
+      margin-right: 5px
+      background #fff
+  .banner-item
+    width: 210px
+    overflow: hidden
+    transition: all .7s cubic-bezier(.46,.98,.54,1.1)
+  a.banner-item-active
+    width: 1070px
+    z-index: 100
+  .item-slide-wrap div
+    display inline-block
+  .item-slide-right
+    margin-left: 5px
+
+
+
+
+// 推广广告 end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
